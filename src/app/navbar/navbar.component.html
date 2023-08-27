@@ -1,0 +1,15 @@
+
+  <div class="navbar" [class.expanded]="isMenuOpen">
+    <span class="close-icon" *ngIf="isMenuOpen" (click)="toggleMenu()">×</span>
+    <ul>
+      <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
+      <li><a routerLink="/about" routerLinkActive="active">About</a></li>
+      <li><a routerLink="/experience" routerLinkActive="active">Experience</a></li>
+      <li><a routerLink="/skills" routerLinkActive="active">Skills</a></li>
+      <li><a routerLink="/achievements" routerLinkActive="active">Achievements</a></li>
+      <li><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
+      <li><a routerLink="/projects" routerLinkActive="active">Projects</a></li>
+
+    </ul>
+  </div>
+  

@@ -1,0 +1,17 @@
+<div class="skills-container">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-list">
+      <div class="skill" *ngFor="let skill of skills">
+        <div class="skill-info">
+          <div class="skill-icon">{{ skill.icon }}</div>
+          <div class="skill-details">
+            <span class="skill-name">{{ skill.name }}</span>
+            <div class="star-rating">
+              <span class="star" *ngFor="let _ of [].constructor(skill.rating); let i = index">&#9733;</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
